@@ -1,14 +1,14 @@
 ﻿/* C # Data Structure Project 4 - Memory Management
 
-Theory:
+Theory and Facts:
 
-1. When data is stored in the stack, it is placed in a "array / Queue" so that the first stored object is at the bottom and the last stored object is placed at the top. 
+1. When data is stored in the stack, it is placed in a "Heap" so that the first stored object is at the bottom and the last stored object is placed at the top. 
  - So to access an object, all the above objects must be removed first.
- - When objects are stored, all objects are available all the time, as long as you know what to look for or indexing.
- - The advantage of data stored on the stack is that the data deletes itself when it has been used up, in contrast to the array where stored data remains after it has been used.
+ - When objects are stored, all objects are available all the time, as long as you know what to look for.
+ - The advantage of data stored on the stack is that the data deletes itself when it has been used up, in contrast to the heap where stored data remains after it has been used.
  
-2. Value types are stored on either the stack or on the array, depending on where they are declared and always store the direct value in memory.
- - Reference types are always stored on the array (Indexing) and instead store the address of the value in memory.
+2. Value types are stored on either the stack or on the heap, depending on where they are declared and always store the direct value in memory.
+ - Reference types are always stored on the heap and instead store the address of the value in memory.
  
 3. Since Int is a value type, when y is set to "= x", the value of x is copied to the memory position for y, x and y then points to different positions in the memory but which currently have the same value.
    When y is then set to "= 4", only the variable y is changed and not x, so what is returned is the original value of x which is set to 3.
@@ -25,7 +25,7 @@ Therefore, it is usually more efficient to increase the capacity of the list by 
 d. No The capacity of the list does not decrease when elements are removed.
 e. When you can know in advance relatively accurately how many elements are to be stored in the structure.
 
-Question # 2: ExaminQueue()
+Question # 2: ExamineQueue()
  - Queue Implimented in Queue Class
  - FIFO -> First in First Out
  - TestQueue Method
