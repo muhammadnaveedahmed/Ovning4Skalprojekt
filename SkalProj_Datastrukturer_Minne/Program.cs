@@ -2,6 +2,10 @@
 
 Theory and Facts:
 
+Stack and Heap Memory -> In C# there are two places where an object can be stored -- the heap and the stack. 
+Objects allocated on the stack are available only inside of a stack frame (execution of a method), 
+while objects allocated on the heap can be accessed from anywhere.
+
 1. When data is stored in the stack, it is placed in a "Heap" so that the first stored object is at the bottom and the last stored object is placed at the top. 
  - So to access an object, all the above objects must be removed first.
  - When objects are stored, all objects are available all the time, as long as you know what to look for.
